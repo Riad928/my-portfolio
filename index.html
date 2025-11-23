@@ -5,22 +5,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
 </head>
 
 <body>
 
     <!-- ====== Navbar ====== -->
-    <header class="navbar">
-        <h2 class="logo">My-Portfolio</h2>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <a href="#">
+                    <h2 class="logo">My-Portfolio</h2>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
 
     <!-- ====== Hero Section ====== -->
@@ -41,40 +48,76 @@
 
     <!-- ====== Services Section ====== -->
     <section id="services" class="services">
-        <h2>My Services</h2>
-        <div class="service-cards">
-            <div class="card">
-                <h3>Web Design</h3>
-                <p>Beautiful and responsive UI using HTML, CSS, and Figma designs.</p>
-            </div>
-            <div class="card">
-                <h3>Web Development</h3>
-                <p>Functional, optimized websites with JavaScript interactivity.</p>
-            </div>
-            <div class="card">
-                <h3>Responsive Design</h3>
-                <p>Fully mobile-friendly layouts that look great on any device.</p>
+        <div class="container">
+            <div class="service-inner">
+                <h2>My Services</h2>
+                <div class="service-cards">
+                    <div class="card">
+                        <h3>Web Design</h3>
+                        <p>Beautiful and responsive UI using HTML, CSS, and Figma designs.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Web Development</h3>
+                        <p>Functional, optimized websites with JavaScript interactivity.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Responsive Design</h3>
+                        <p>Fully mobile-friendly layouts that look great on any device.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- ====== Contact Section ====== -->
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="4" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
+<section id="contact" class="py-20 mt-10 bg-gray-50">
+    <div class="max-w-md mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-800">
+            Contact Me
+        </h2>
+        <p class="text-center text-gray-500 mt-2">
+            Feel free to reach out anytime!
+        </p>
+        <form class="mt-8 bg-white/80 backdrop-blur-xl shadow-xl rounded-2xl p-8 border border-gray-100">
+
+            <div class="mb-5">
+                <label class="block text-left text-gray-700 font-medium mb-1">Your Name</label>
+                <input type="text"
+                    class="w-full border border-gray-300 focus:border-gray-700 focus:ring-1 focus:ring-gray-700 rounded-lg py-2.5 px-4 outline-none transition"
+                    placeholder="Enter your name" required>
+            </div>
+
+            <div class="mb-6">
+                <label class="block text-left text-gray-700 font-medium mb-1">Your Email</label>
+                <input type="email"
+                    class="w-full border border-gray-300 focus:border-gray-700 focus:ring-1 focus:ring-gray-700 rounded-lg py-2.5 px-4 outline-none transition"
+                    placeholder="Enter your email" required>
+            </div>
+
+            <button type="submit"
+                class="w-full bg-gray-900 text-white font-semibold py-3 rounded-lg hover:bg-gray-800 transition shadow-md">
+                Submit
+            </button>
+
         </form>
-    </section>
+    </div>
+</section>
+
 
     <!-- ====== Footer ====== -->
-    <footer>
-        <p>© 2025 MyPortfolio | All Rights Reserved</p>
+    <footer class="bg-gray-900 text-gray-300 mt-10 py-8">
+        <div class="max-w-7xl mx-auto py-6">
+            <div class="flex flex-col md:flex-row items-center justify-between px-10">
+                <p>© 2025 MyPortfolio | All Rights Reserved</p>
+                <div class="mt-4 md:mt-0 text-center">
+                    <h1 class="font-semibold text-lg">Contact Me</h1>
+                    <p>Phone:01743425540</p>
+                    <p>Email: riadsust@gmail.com</p>
+                    <p>Address : Akhaliya, sylhet </p>
+                </div>
+            </div>
+        </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 
 </html>
